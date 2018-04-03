@@ -1,0 +1,234 @@
+/*
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Indie Flower', cursive;
+*/
+
+html {
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: content-box;
+    color: #6B4E2A;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, h3 {
+    font-family: 'Oleo Script', cursive;
+    color: #583712;
+}
+
+
+
+.header {
+    width: 100%;
+    z-index: 9999;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-box {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-box {
+    width: 50%;
+}
+
+.logo {
+    width: 150px;
+    max-width: 100%;
+    padding : 5px;
+}
+
+.nav-box a {
+    color: #583712; // marron (logo) -> #583712
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MAIN NAV */
+.psychomot {
+    padding-top: 100px;
+}
+
+.psy-header {
+    text-align: center;
+    position: relative;
+}
+
+.psy-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.psy-nav a {
+    width: 30%;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #583712;
+    font-size: 1.2rem;
+}
+
+.psy-nav a:hover {
+    background-color: rgba(107, 78, 42, 1);
+    color: white;
+    transition: all 0.5s;
+}
+
+/* END MAIN NAV */
+
+/* RIGHT NAV */
+
+.right-psy-header {
+    position: fixed;
+    top: 50%;
+    right: 10%;
+}
+
+.right-psy-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-psy-nav a {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px rgba(107, 78, 42, 1);
+}
+
+/* END RIGHT NAV */
+
+/* PSYCHOMOTRICITE */
+.items {
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+
+.items p{
+    text-align: justify;
+}
+
+.items ul{
+    list-style: circle;
+    text-align: justify;
+}
+
+.items ul li {
+    padding-bottom: 5px;
+}
+.bckcol-wood{
+    background-color: rgba(107, 78, 42, 1);
+}
+
+.col-wood h2, h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.col-wood h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.col-wood p {
+    color: white;
+    line-height: 1.8;
+}
+
+.bckcol-white{
+    background-color: white;
+}
+
+.col-white h2 {
+    font-size: 2rem;
+    color: #583712;
+}
+
+.col-white h3 {
+    font-size: 2rem;
+    color: #583712;
+}
+
+.col-white p {
+    color: #583712
+}
+
+.img-float-l {
+    float: left;
+    max-width: 250px;
+    margin: 5px 10px 10px 0;
+}
+
+.img-float-r {
+    float: right;
+    max-width: 250px;
+    margin: 5px 0 10px 10px;
+}
+
+
+/* END PSYCHOMOTRICITE */
+
+
+/* VIDEO */
+#welcome {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -9999;
+}
+#welcome > video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 1. Pas de support d'object-fit */
+@media (min-aspect-ratio: 16/9) {
+    #welcome > video {
+        height: 300%;
+        top: -100%;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #welcome > video {
+        width: 300%;
+        left: -100%;
+    }
+}
+/* 2. En cas de support d'object-fit, écrase les règles en (1) */
+@supports (object-fit: cover) {
+    #welcome > video {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+/* END VIDEO */
