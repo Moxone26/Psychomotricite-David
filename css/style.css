@@ -66,6 +66,12 @@ h2, h3 {
     margin-right: auto;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+
 /* MAIN NAV */
 .psychomot {
     padding-top: 100px;
@@ -108,12 +114,20 @@ h2, h3 {
 .right-psy-nav {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .right-psy-nav a {
     text-align: center;
     color: white;
-    text-shadow: 1px 1px rgba(107, 78, 42, 1);
+    text-shadow: 1px 1px 1px rgba(107, 78, 42, 1), 1px 1px 1px rgba(107, 78, 42, 1), 1px 1px 1px rgba(107, 78, 42, 1), 1px 1px 1px rgba(107, 78, 42, 1);
+    margin: 2px 0;
+}
+
+.right-psy-nav .fa {
+    text-shadow: 1px 1px 1px white, 1px 1px 1px white, 1px 1px 1px white, 1px 1px 1px white;
+    margin: 2px 0;
+
 }
 
 /* END RIGHT NAV */
