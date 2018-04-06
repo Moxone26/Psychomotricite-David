@@ -204,6 +204,10 @@ h2, h3 {
 
 
 /* VIDEO */
+.welcome-wrap {
+    width: 100%
+}
+
 #welcome {
     overflow: hidden;
     position: fixed;
@@ -246,3 +250,16 @@ h2, h3 {
 }
 
 /* END VIDEO */
+
+/* Who Iam */
+#whoIam {
+    padding-top: 100vh;
+}
+
+/* MAP */
+#map iframe {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* ENDMAP */
